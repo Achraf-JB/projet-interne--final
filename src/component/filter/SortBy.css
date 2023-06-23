@@ -1,0 +1,34 @@
+.sort-by-toggle{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+.sortlabel{
+    margin-left: 20px;
+    font-size:2vw ;
+}
+.sortinput{
+    margin-left: 27px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    accent-color: #4aa3a2;
+   
+    
+}
+.hr3 {
+    border: none;
+    margin-top: 5px;
+    margin-left: 17px;
+    margin-right: 70px !important;
+    height: 1px;
+    background-color: #bdbdbd;  /* Modern Browsers */
+  }
+  input[type="radio"]:checked + label {
+    color: #4aa3a2;
+    
+  }
+
+.arrow{
+    cursor: pointer;
+}

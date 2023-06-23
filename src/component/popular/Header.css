@@ -1,0 +1,127 @@
+.section{
+  display: flex;
+  flex-direction: row;
+  gap: 65%;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 3%;
+  border-bottom: solid 8px #4AA3A2;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  height: auto;
+}
+
+.pn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fefefe;
+  background-color: #4AA3A2;
+  padding: 0px;
+  margin: 0%;
+  width: 25%;
+  height: 72px;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+}
+
+.va{
+  font-size: 1.5rem;
+  color: #423F32;
+  font-family: 'DM Sans', sans-serif;
+  white-space: nowrap;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .section{
+    gap: 50% ;
+  }
+  .pn {
+    font-size: 0.7rem ;
+    width: fit-content;
+    height: 40px;
+    margin-left: 5vw;
+  }
+
+  .va {
+    font-size: 12px !important;
+
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px)  {
+  .section{
+    gap: 60%;
+  }
+  .pn {
+    font-size: 0.7rem;
+    width: 25%;
+    height: 40px;
+  }
+
+  .va {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px)  {
+  .section{
+    gap: 45%;
+  }
+  .pn {
+    font-size: 0.9rem;
+    width: 40%;
+    height: 40px;
+  }
+
+  .va {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+  .section{
+    gap: 58%;
+  }
+  .pn {
+    font-size: 1.1rem;
+    width: 30%;
+    height: 50px;
+  }
+  .va {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px)  {
+  .pn {
+    font-size: 1.3rem;
+    width: 25%;
+    height: 60px;
+  }
+
+  .va {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2560px){
+  .va{
+    font-size: 25px;
+  }
+  .pn{
+     	font-size: 30px;
+      height: 80px;
+      padding-bottom: 0%;
+      margin-bottom: 0%;
+    }
+}
+@media (min-width: 2560px) {
+  .va{
+    font-size: 50px;
+  }
+  .pn{
+     	font-size: 60px;
+      height: 120px;
+      padding-bottom: 0%;
+      margin-bottom: 0%;
+    }
+}

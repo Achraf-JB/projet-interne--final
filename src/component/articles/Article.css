@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+.Article {
+  font-family: Montserrat, sans serif;
+  
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height:380px;
+  margin:10px;
+  gap: 20px;
+  box-shadow: 4px 4px 16px rgba(128, 128, 128, 0.196);
+  padding: 10px;
+ 
+}
+
+.Article .img1 {
+  
+  width: 18em;
+  height:60%;
+  object-fit: cover;
+}
+.price {
+color: rgba(0, 0, 0, 0.796);
+text-align: left;
+margin:0;
+margin-bottom: 15px;
+}
+
+.title {
+  color: rgb(23, 22, 22);
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  
+}
+
+.Article,
+.Article .cover img {
+  border-radius: 20px;
+  width: fit-content;
+}
+.seeMore{
+  height:40px;
+  width:180px;
+  border-radius:8px;
+  border:none;
+  background-color: #4AA3A2;
+  color:white;
+  font-size: 17px;
+  margin-bottom: 1px;
+  font-family: Montserrat;
+}
+.seeMore:hover{
+  background-color:#54bbb9 ;
+  transition:0.4s; 
+  cursor:pointer;
+}

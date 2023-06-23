@@ -1,0 +1,53 @@
+form{
+    background-color: #F5F5F5;
+    padding: 30px 20px ;
+    padding-top: 60px;
+}
+form .h111{
+    font-size: 1.5rem !important;
+    color: rgba(0, 0, 0, 0.704);
+   
+}
+form .corps{
+    margin: 10px 30px;
+    background-color: #4AA3A2;
+    display: flex;
+    gap: 10px;
+    height: 200px;
+    box-shadow: 15px 11px 0px -1px rgba(189, 184, 184, 0.979);
+-webkit-box-shadow: 15px 11px 0px -1px rgba(214, 210, 210, 0.979);
+-moz-box-shadow: 15px 11px 0px -1px rgba(189, 184, 184, 0.979);
+padding: 20px;
+margin-top: 20px;
+
+    
+}
+
+form .corps .gauche{
+    width: 55%;
+}
+form .corps .gauche input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+}
+
+form .corps .droite{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 10px;
+}
+form .corps .droite input{
+    height: 70px;
+    padding: 10px;
+}
+.buttonxx{
+    width: fit-content;
+    padding: 10px;
+   margin: auto;
+background-color: #204646;
+color: white;
+cursor: pointer;
+}

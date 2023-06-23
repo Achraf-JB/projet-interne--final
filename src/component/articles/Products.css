@@ -1,0 +1,29 @@
+.titre{
+  background-color: #4AA3A2;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  height: 1.5cm;
+  width: 100%;
+  left: 10%;
+  overflow: hidden;
+  margin-bottom: 3%;
+  }
+  .produit{
+    padding-top: 1%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 4%;
+  }
+  #hr{
+      /* margin-top: 35px; */
+      width: 100%;
+      z-index: 32;
+      position: absolute;
+      /* top: 20px; */
+      /* margin-bottom: 20em; */
+      height: 4px;
+      /* background-color: #4AA3A2; */
+  }
+
+  

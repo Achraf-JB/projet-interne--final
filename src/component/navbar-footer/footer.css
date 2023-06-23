@@ -1,0 +1,45 @@
+.footer{
+    background-color: #F5F5F5;
+    
+}
+.footer  h3{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+    font-weight: lighter;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+ul li{
+    list-style: none;
+}
+ .footer a{ display: inline-block;
+    text-align: center;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(83, 194, 221);
+    padding-top: 5px;
+
+}
+.footer a:hover{
+    color: grey;
+    transition: 0.5s ease-in-out;
+}
+/* .location{
+    width: 40%;
+    background-color:rgb(83, 194, 221) ;
+    height: 350px;
+    position: relative;
+    right: -780px;
+    top: -380px;
+    
+} */
+

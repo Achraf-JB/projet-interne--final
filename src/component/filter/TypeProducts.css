@@ -1,0 +1,35 @@
+.sort-by-toggle{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+.sortlabel{
+    margin-left: 20px;
+    font-size:2vw ;
+}
+.sortinput{
+    margin-left: 27px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    accent-color: #4aa3a2;
+    
+    
+}
+
+  input[type="checkbox"]:checked + label {
+    color: #4aa3a2;
+ 
+  }
+
+.sort-options-containerr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hr4{
+    border: none;
+    margin-left: 17px;
+    
+    height: 1px;
+    background-color: #bdbdbd;  /* Modern Browsers */
+}

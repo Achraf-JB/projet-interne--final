@@ -1,0 +1,60 @@
+.sort-by-toggle{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
+.sortlabel{
+    margin-left: 20px;
+    font-size:2vw;
+}
+.sortinput3{
+    margin-left: 27px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  
+    
+}
+#sort-by-option13{
+    accent-color: white;
+}
+#sort-by-option23{
+    accent-color: orange;
+    color: orange;
+    background-color: orange;
+}
+#sort-by-option33{
+    accent-color: beige;
+}
+#sort-by-option43{
+    accent-color: pink;
+}
+#sort-by-option53{
+    accent-color: black;
+}
+#sort-by-option63{
+    accent-color: purple;
+}
+#sort-by-option73{
+    accent-color: green;
+}
+#sort-by-option83{
+    accent-color: red;
+}
+.hr1 {
+    border: none;
+    margin-left: 17px;
+    margin-right: 30px;
+    height: 1px;
+    background-color: #bdbdbd;  /* Modern Browsers */
+  }
+  input[type="radio"]:checked + label {
+    color: #4aa3a2;
+    
+  }
+
+.sort-options-containerr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  

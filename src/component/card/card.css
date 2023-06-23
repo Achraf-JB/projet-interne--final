@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200&family=Playfair+Display&display=swap');
+.Card-Box{
+    background-color: #F8FAF0;
+    border-radius: 20px;
+    min-height: 30vh; 
+    /* width: 20vw; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 0.7em 0.7em 3em rgba(0, 0, 0, 0.282) inset;
+ 
+}
+.Card-Box:hover{
+  box-shadow: none;
+}
+
+.parag{
+    width: 	100%;
+    font-size: 1.5vw;
+    font-weight:550;
+    text-align: center;
+    line-height: 1.6em;
+    color: rgba(0, 0, 0, 0.704);
+}
+#Owner{
+    font-size: 2vw;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.704);
+}
+@media screen and (max-width:780px) {
+ .cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.75em;
+    height: fit-content;
+    
+
+ }
+ .Card-Box{
+    width: fit-content;
+ }
+ .parag{
+    font-size: 4vw;
+}
+}
