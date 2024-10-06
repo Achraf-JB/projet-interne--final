@@ -7,6 +7,6 @@ spec:
     app: react-app
   ports:
     - protocol: TCP
-      port: 80        # This is the port that the service exposes
-      targetPort: 3000 # This is the port on which the container is listening
-  type: NodePort
+      port: 80       
+      targetPort: 3000 
+  
