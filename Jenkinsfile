@@ -39,13 +39,6 @@ pipeline {
                 }
             } 
         }
-
-        stage('Install Dependencies') {
-            steps {
-                sh "npm install"
-            }
-        }
-
         stage('OWASP FS Scan') {
             steps {
                 dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit', odcInstallation: 'DB-check'
@@ -58,6 +51,44 @@ pipeline {
                  sh "trivy fs --format table -o trivy-fs-report.html ."
             }
         }
+        stage('Build') {
+            steps {
+                 withCredentials([file(credentialsId: 'mynpm-cred', variable: 'my-npmrc')]) {
+                      echo "performing npm  building"
+                      sh "npm install --userconfig $my-npmrc  --registry=http://4.222.216.142:8081/repository/my-group/  --loglevel verbose"
+               }
+            }
+        }
+        stage('publish to nexus') {
+            steps {
+                 withCredentials([file(credentialsId: 'mynpm-cred', variable: 'my-npmrc')]) {
+                      echo "performing npm  publish"
+                      sh "npm publish --userconfig $my-npmrc --loglevel verbose"
+               }
+            }
+        }
+        stage('Build & Tag Docker Image') {
+            steps {
+               withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                 sh "docker build -t achraf899/react-app:latest ."
+
+               }
+            }
+        }
+        stage('Trivy Scan Image') {
+            steps {
+               sh "trivy image --format table -o trivy-image-report.html achraf899/react-app:latest"
+            }
+        }
+        stage('Publish Docker Image') {
+            steps {
+               withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                 sh "docker push  achraf899/react-app:latest"
+
+               }
+            }
+        }
+         
         
     }
 
