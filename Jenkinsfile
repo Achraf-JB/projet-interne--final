@@ -88,6 +88,13 @@ pipeline {
                }
             }
         }
+        stage('Deploy to Kubernetes') {
+            steps {
+                withKubeConfig(caCertificate: '', clusterName: 'mykubcluster', contextName: '', credentialsId: 'K8-token', namespace: 'jenkins', restrictKubeConfigAccess: false, serverUrl: 'https://mykubcluster-dns-1n8sz2qo.hcp.centralindia.azmk8s.io') {
+                    sh "kubectl apply -f deployment.yaml -n jenkins"
+                }
+            }
+        }
          
         
     }
